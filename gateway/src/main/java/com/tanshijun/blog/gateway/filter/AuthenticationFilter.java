@@ -73,6 +73,7 @@ public class AuthenticationFilter extends ZuulFilter {
         RequestContext ctx = RequestContext.getCurrentContext();
         HttpServletRequest request = ctx.getRequest();
         AuthenEnum authenEnum = authenticationService.authen(request);
+        logger.info("authen result:"+authenEnum.getResponseCode()+";"+authenEnum.getDesc());
         if(AuthenEnum.AUHENSUCCESS == authenEnum){
             ctx.setSendZuulResponse(true);// 认证成功，对该请求进行路由
             ctx.setResponseStatusCode(200);
