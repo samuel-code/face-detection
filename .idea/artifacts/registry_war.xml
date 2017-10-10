@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="registry:war">
+    <output-path>$PROJECT_DIR$/registry/target</output-path>
+    <root id="archive" name="registry.war">
+      <element id="artifact" artifact-name="registry:war exploded" />
+    </root>
+  </artifact>
+</component>
