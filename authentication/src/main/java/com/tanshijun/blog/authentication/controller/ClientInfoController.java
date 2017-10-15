@@ -4,6 +4,7 @@ import com.tanshijun.blog.common.constant.VOConstant;
 import com.tanshijun.blog.common.vo.ClientInfoVO;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.session.data.redis.config.annotation.web.http.RedisHttpSessionConfiguration;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

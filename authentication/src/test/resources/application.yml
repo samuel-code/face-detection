@@ -1,0 +1,21 @@
+dataserver:
+  ip: 172.20.253.2
+spring:
+  application:
+    name: springSecurity
+  datasource:
+    username: root
+    password: 4772256
+    url: jdbc:mysql://${dataserver.ip}:3306/jj_blog
+  jpa:
+    database: mysql
+    show-sql: true
+  redis:
+    host: ${dataserver.ip}
+    port: 6379
+    # 1 测试库
+    database: 1
+    pool:
+      max-active: 8
+      max-idle: 8
+      min-idle: 0

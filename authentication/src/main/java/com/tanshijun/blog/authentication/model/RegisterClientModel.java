@@ -1,29 +1,42 @@
 package com.tanshijun.blog.authentication.model;
 
+import javax.persistence.*;
 import java.io.Serializable;
 
 /**
  * 用户注册实体类
  * Created by tanshijun-pc on 2017/10/10.
  */
+@Entity
+@Table(name = "JJ_REGISTER_CLIENT_TAB")
 public class RegisterClientModel implements Serializable{
 
+    @Id
+    @GeneratedValue
     private Long id;
     //用户名
+    @Column(name = "USERNAME")
     private String userName;
     //登录名--->手机号
+    @Column(name = "LOGINNAME")
     private String loginName;
     //登录密码
+    @Column(name = "PASSWORD")
     private String password;
     //图像地址
+    @Column(name="LOGOURL")
     private String logoUrl;
     //简介
+    @Column(name = "SUMMARY")
     private String summary;
     //公司
+    @Column(name = "COMPANY")
     private String company;
     //职位
+    @Column(name = "POSITION")
     private String position;
     //创建时间
+    @Column(name = "CREATETIME")
     private String createTime;
 
     public String getCreateTime() {

@@ -62,10 +62,10 @@ public class AuthenticationFilter extends ZuulFilter {
      */
     private boolean match(String uri){
         String[] uriArray = uri.split("/");
-        if(uriArray == null || uriArray.length < 2){
+        if(uriArray == null || uriArray.length < 3){
             return false;
         }
-        String uriPrefix = uriArray[1];
+        String uriPrefix = uriArray[2];
         return uriPrefix.equals(filterUrlPrefix);
     }
     @Override
