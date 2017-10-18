@@ -191,6 +191,5 @@
     <orderEntry type="library" name="Maven: redis.clients:jedis:2.8.2" level="project" />
     <orderEntry type="library" name="Maven: org.apache.commons:commons-pool2:2.4.2" level="project" />
     <orderEntry type="library" name="Maven: com.alibaba:fastjson:1.2.38" level="project" />
-    <orderEntry type="module" module-name="common" />
   </component>
 </module>

@@ -2,6 +2,7 @@ package com.tanshijun.blog.common.session;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletRequestWrapper;
+import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 /**
@@ -12,10 +13,11 @@ public class DistriHttpServletRequestWapper extends HttpServletRequestWrapper {
     private DistriService distriService;
 
     private HttpServletRequest httpServletRequest;
-
-    public DistriHttpServletRequestWapper(HttpServletRequest request,DistriService distriService) {
+    private HttpServletResponse httpServletResponse;
+    public DistriHttpServletRequestWapper(HttpServletRequest request,DistriService distriService,HttpServletResponse httpServletResponse) {
         super(request);
         this.distriService = distriService;
+        this.httpServletResponse = httpServletResponse;
     }
 
     @Override
@@ -25,6 +27,6 @@ public class DistriHttpServletRequestWapper extends HttpServletRequestWrapper {
 
     @Override
     public HttpSession getSession(boolean create) {
-        return distriService.createHttpSession();
+        return distriService.createHttpSession((HttpServletRequest)getRequest(),httpServletResponse);
     }
 }

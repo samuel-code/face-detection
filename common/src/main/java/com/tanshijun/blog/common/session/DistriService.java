@@ -1,5 +1,7 @@
 package com.tanshijun.blog.common.session;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 /**
@@ -7,7 +9,6 @@ import javax.servlet.http.HttpSession;
  */
 public interface DistriService {
 
-    HttpSession createHttpSession();
+    HttpSession createHttpSession(HttpServletRequest request, HttpServletResponse response);
 
-    String sessionId();
 }

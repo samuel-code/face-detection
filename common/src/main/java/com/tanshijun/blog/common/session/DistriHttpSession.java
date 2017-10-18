@@ -18,12 +18,10 @@ public class DistriHttpSession  implements HttpSession{
 
     private HttpServletRequest httpServletRequest;
 
-    private String sessionId;
 
     private long createTime;
 
-    public DistriHttpSession(SessionMap sessionMap, HttpServletRequest httpServletRequest, String sessionId){
-        this.sessionId = sessionId;
+    public DistriHttpSession(SessionMap sessionMap, HttpServletRequest httpServletRequest){
         this.createTime = System.currentTimeMillis();
         this.sessionMap = sessionMap;
         this.httpServletRequest = httpServletRequest;
@@ -36,7 +34,7 @@ public class DistriHttpSession  implements HttpSession{
 
     @Override
     public String getId() {
-        return sessionId;
+        return TokenUtils.findToken(httpServletRequest);
     }
 
     @Override

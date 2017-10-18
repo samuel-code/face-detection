@@ -1,5 +1,9 @@
 package com.tanshijun.blog.common.session;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 /**
@@ -7,14 +11,19 @@ import javax.servlet.http.HttpSession;
  */
 public class DistriServiceImpl implements DistriService {
 
-    private DistriHttpSession distriHttpSession;
+    private static final String SESSION_KEY = "session_key";
+    @Autowired
+    private SessionMap sessionMap;
     @Override
-    public HttpSession createHttpSession() {
-        return null;
+    public HttpSession createHttpSession(HttpServletRequest request, HttpServletResponse response) {
+
+        DistriHttpSession distriHttpSession = (DistriHttpSession) request.getAttribute(SESSION_KEY);
+        if(distriHttpSession != null){
+            return distriHttpSession;
+        }
+        distriHttpSession = new DistriHttpSession(sessionMap,request);
+        request.setAttribute(SESSION_KEY,distriHttpSession);
+        return distriHttpSession;
     }
 
-    @Override
-    public String sessionId() {
-        return null;
-    }
 }

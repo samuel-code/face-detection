@@ -8,7 +8,8 @@ public enum AuthenEnum {
 
     NOTLOGIN("AU0001",1000,"未登录"),
     AUHENSUCCESS("AU0000",0000,"成功"),
-    INVALID("AU0002",1001,"无效token");
+    INVALID("AU0002",1001,"无效token"),
+    ACCESSLIMIT("AU0002",1002,"访问太频繁,稍后访问");
     private String responseCode;
 
     private int headCode;

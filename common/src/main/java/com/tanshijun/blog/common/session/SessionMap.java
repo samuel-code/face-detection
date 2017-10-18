@@ -6,9 +6,9 @@ package com.tanshijun.blog.common.session;
  */
 public interface SessionMap {
 
-    void remove(String key);
+    void remove(String sessionId, String key);
 
-    Object get(String key);
+    Object get(String sessionId,String key);
 
-    void set(String key, Object value);
+    void set(String sessionId,String key, Object value);
 }

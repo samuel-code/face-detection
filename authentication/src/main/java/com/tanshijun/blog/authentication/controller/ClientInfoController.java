@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
  * Created by tanshijun-pc on 2017/10/9.
  */
 @RestController
-@RequestMapping("/authen")
+@RequestMapping("/authen1")
 public class ClientInfoController {
 
     private Logger logger = LoggerFactory.getLogger(getClass());

@@ -1,5 +1,5 @@
 dataserver:
-  ip: 172.20.253.2
+  ip: 172.16.133.2
 spring:
   application:
     name: springSecurity

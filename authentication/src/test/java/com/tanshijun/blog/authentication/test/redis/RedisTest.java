@@ -56,4 +56,44 @@ public class RedisTest {
           logger.info("============resultClass:{}============",object.getClass());
            logger.info("============result:{}============",object);
        }
+
+       @Test
+       public void testValueGet(){
+           redisTemplate.execute(new RedisCallback<Object>() {
+               @Override
+               public Object doInRedis(RedisConnection redisConnection) throws DataAccessException {
+                   String value = new String(redisConnection.get("bbb".getBytes()));
+                   System.out.println("============value="+value+"=================");
+                   return new Object();
+               }
+           });
+
+       }
+       @Test
+       public void testMulit(){
+           redisTemplate.setEnableTransactionSupport(true);
+           long result = redisTemplate.execute(new RedisCallback<Long>() {
+               @Override
+               public Long doInRedis(RedisConnection redisConnection) throws DataAccessException {
+
+                   System.out.println("=========="+redisConnection.isQueueing()+"==================");
+                   redisConnection.set("a".getBytes(),"a".getBytes());
+                   byte[] key = "post:b".getBytes();
+
+                   int flag = 2;
+                       System.out.println("nnnnnnnnnnnnnnnnnnnnnnnnnnnnn");
+                       redisConnection.multi();
+                       redisConnection.set("bbb".getBytes(),"bbb1".getBytes());
+
+                       if(flag == 1){
+                           throw new RuntimeException("exception");
+                       }
+                       redisConnection.set("ccc".getBytes(),"ccc".getBytes());
+                       redisConnection.exec();
+                   return 20l;
+               }
+           });
+
+           System.out.println("result:"+result);
+       }
 }

@@ -1,5 +1,7 @@
 package com.tanshijun.blog.authentication.config;
 
+import com.tanshijun.blog.common.operation.redis.RedisOperation;
+import com.tanshijun.blog.common.operation.redis.RedisOperationImpl;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
@@ -17,9 +19,6 @@ import redis.clients.jedis.JedisPoolConfig;
 @Configuration
 public class DefaultRedisConfig {
 
-    @Value("${blog.server.ip}")
-    private String server;
-
     private Logger logger = LoggerFactory.getLogger(getClass());
 
     @Bean
@@ -29,19 +28,9 @@ public class DefaultRedisConfig {
         return redisTemplate;
     }
 
-    //@Bean
-    //@ConfigurationProperties(prefix="spring.redis")
-    public RedisConnectionFactory redisConnectionFactory(JedisPoolConfig config){
-        logger.info("create RedisConnectionFactory:"+server);
-        JedisConnectionFactory connectionFactory = new JedisConnectionFactory();
-        connectionFactory.setPoolConfig(config);
-        return connectionFactory;
-    }
-
-    //@Bean
-    //@ConfigurationProperties(prefix="spring.redis")
-    public JedisPoolConfig jedisPoolConfig(){
-        JedisPoolConfig config = new JedisPoolConfig();
-        return config;
+    @Bean
+    public RedisOperation<Object> redisOperations(RedisTemplate<String,Object> redisTemplate){
+        RedisOperation<Object> redisOperations = new RedisOperationImpl(redisTemplate);
+        return redisOperations;
     }
 }

@@ -155,6 +155,13 @@
     <orderEntry type="library" name="Maven: com.netflix.ribbon:ribbon-loadbalancer:2.2.0" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: com.netflix.netflix-commons:netflix-statistics:0.1.1" level="project" />
     <orderEntry type="library" name="Maven: io.reactivex:rxjava:1.1.10" level="project" />
-    <orderEntry type="module" module-name="common" />
+    <orderEntry type="library" name="Maven: com.alibaba:fastjson:1.2.38" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-redis:1.4.3.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.data:spring-data-redis:1.7.6.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.data:spring-data-keyvalue:1.1.6.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-oxm:4.3.5.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-context-support:4.3.5.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: redis.clients:jedis:2.8.2" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.commons:commons-pool2:2.4.2" level="project" />
   </component>
 </module>
