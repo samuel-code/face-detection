@@ -1,6 +1,7 @@
 package com.tanshijun.blog.gateway.service.impl;
 
 import com.tanshijun.blog.common.constant.AuthenEnum;
+import com.tanshijun.blog.common.dto.ClientInfoDTO;
 import com.tanshijun.blog.common.utils.TokenUtils;
 import com.tanshijun.blog.common.vo.BaseVO;
 import com.tanshijun.blog.gateway.service.AuthenticationService;
@@ -38,4 +39,13 @@ public class AuthenticationServiceImpl implements AuthenticationService {
         BaseVO baseVo = responseEntity.getBody();
         return AuthenEnum.find(baseVo.getResponseCode());
     }
+
+    @Override
+    public ClientInfoDTO queryClient(HttpServletRequest request) {
+        String token = TokenUtils.findToken(request);
+        ResponseEntity<ClientInfoDTO> responseEntity = restTemplate.getForEntity("http://"+authServiceId+"/authen/clientInfo?token={token}", ClientInfoDTO.class,token);
+        return responseEntity.getBody();
+    }
+
+
 }

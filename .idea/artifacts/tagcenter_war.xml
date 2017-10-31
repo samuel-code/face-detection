@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="tagcenter:war">
+    <output-path>$PROJECT_DIR$/tagcenter/target</output-path>
+    <root id="archive" name="tagcenter.war">
+      <element id="artifact" artifact-name="tagcenter:war exploded" />
+    </root>
+  </artifact>
+</component>

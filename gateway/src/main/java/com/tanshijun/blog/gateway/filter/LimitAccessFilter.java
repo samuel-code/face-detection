@@ -91,23 +91,23 @@ public class LimitAccessFilter extends ZuulFilter {
             logger.info("===========limit=============");
             String ip = IpUtils.getIpAddress(request);
             final String key = PREFIX_LIMIT_KEY.concat(ip);
-            long accessNum = redisOperation.exec(new RedisCallback<Long>() {
-                @Override
-                public Long doInRedis(RedisConnection redisConnection) throws DataAccessException {
+            long accessNum = redisOperation.exec((RedisConnection redisConnection)->{
 
-                    long localAccessNum = 0;
-                    byte[] byteKey = key.getBytes();
-                    if(redisConnection.exists(byteKey)){
-                        localAccessNum = redisConnection.incr(byteKey);
-                    }else{
-                        redisConnection.multi();
-                        redisConnection.incr(byteKey);
-                        redisConnection.expire(byteKey,TimeUnit.SECONDS.toMillis(timeUnit));
-                        redisConnection.exec();
-                    }
-                    return localAccessNum;
+                long localAccessNum = 0;
+                byte[] byteKey = key.getBytes();
+                if(redisConnection.exists(byteKey)){
+                    Long ttl = redisConnection.ttl(byteKey);
+                    logger.info("===="+key+"====ttl:"+ttl);
+                    localAccessNum = redisConnection.incr(byteKey);
+                }else{
+                    redisConnection.multi();
+                    redisConnection.incr(byteKey);
+                    redisConnection.expire(byteKey,timeUnit);
+                    redisConnection.exec();
                 }
-            });//redisOperation.incr(key, TimeUnit.SECONDS,timeUnit);
+                return localAccessNum;
+            }
+        );//redisOperation.incr(key, TimeUnit.SECONDS,timeUnit);
             boolean limit = accessNum > threshold;
             logger.info("ip:{} accessNum:{} should limit:{}",ip,accessNum,limit);
             return limit;

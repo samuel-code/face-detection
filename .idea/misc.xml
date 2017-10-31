@@ -40,8 +40,10 @@
   </component>
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/authentication" />
+    <file type="web" url="file://$PROJECT_DIR$/filecenter" />
     <file type="web" url="file://$PROJECT_DIR$/gateway" />
     <file type="web" url="file://$PROJECT_DIR$/registry" />
+    <file type="web" url="file://$PROJECT_DIR$/tagcenter" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
@@ -52,6 +54,7 @@
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/articlecenter/pom.xml" />
+        <option value="$PROJECT_DIR$/fileCenter/pom.xml" />
       </set>
     </option>
   </component>

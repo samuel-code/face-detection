@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="filecenter:war">
+    <output-path>$PROJECT_DIR$/filecenter/target</output-path>
+    <root id="archive" name="filecenter.war">
+      <element id="artifact" artifact-name="filecenter:war exploded" />
+    </root>
+  </artifact>
+</component>

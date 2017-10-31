@@ -17,4 +17,11 @@ public interface AuthenticationService {
      * @return
      */
     AuthenEnum authen(HttpServletRequest request);
+
+    /**
+     * 获取用户信息
+     * @param request
+     * @return
+     */
+    ClientInfoDTO queryClient(HttpServletRequest request);
 }

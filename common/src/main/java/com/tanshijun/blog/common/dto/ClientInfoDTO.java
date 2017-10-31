@@ -32,4 +32,9 @@ public class ClientInfoDTO {
     public void setTelNumber(String telNumber) {
         this.telNumber = telNumber;
     }
+
+    @Override
+    public String toString() {
+        return "ClientInfoDTO{" + "name='" + name + '\'' + ", sex='" + sex + '\'' + ", telNumber='" + telNumber + '\'' + '}';
+    }
 }

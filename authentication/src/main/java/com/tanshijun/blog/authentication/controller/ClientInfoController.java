@@ -7,19 +7,20 @@ import org.slf4j.LoggerFactory;
 import org.springframework.session.data.redis.config.annotation.web.http.RedisHttpSessionConfiguration;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
  * Created by tanshijun-pc on 2017/10/9.
  */
 @RestController
-@RequestMapping("/authen1")
+@RequestMapping("/authen")
 public class ClientInfoController {
 
     private Logger logger = LoggerFactory.getLogger(getClass());
 
     @GetMapping("/clientInfo")
-    public ClientInfoVO findClientInfo(){
+    public ClientInfoVO findClientInfo(@RequestParam("token") String token){
         ClientInfoVO infoVO = new ClientInfoVO();
         infoVO.setAge("12");
         infoVO.setUserName("lisai");

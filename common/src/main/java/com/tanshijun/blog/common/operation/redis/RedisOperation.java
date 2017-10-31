@@ -58,4 +58,5 @@ public interface RedisOperation<T> {
     long incr(String key);
 
     <V> V exec(RedisCallback<V> redisCallback);
+
 }

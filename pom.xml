@@ -10,8 +10,10 @@
     <module>gateway</module>
     <module>common</module>
     <module>registry</module>
-      <module>articlecenter</module>
     <module>articlecenter</module>
+    <module>tagcenter</module>
+      <module>fileCenter</module>
+    <module>filecenter</module>
   </modules>
   <name>blog Maven Webapp</name>
   <url>http://maven.apache.org</url>

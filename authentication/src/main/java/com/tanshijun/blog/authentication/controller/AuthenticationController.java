@@ -4,6 +4,7 @@ import com.tanshijun.blog.authentication.model.RegisterClientModel;
 import com.tanshijun.blog.authentication.repository.RegisterClientRepository;
 import com.tanshijun.blog.common.constant.AuthenEnum;
 import com.tanshijun.blog.common.constant.VOConstant;
+import com.tanshijun.blog.common.exception.ResponseException;
 import com.tanshijun.blog.common.vo.BaseVO;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -11,6 +12,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.text.SimpleDateFormat;
@@ -26,7 +28,7 @@ public class AuthenticationController {
    @Autowired
    private RegisterClientRepository registerClientRepository;
    @GetMapping("/login")
-   public BaseVO login(){
+   public BaseVO login(@RequestParam(value = "flag") String flag){
       BaseVO vo = new BaseVO();
       vo.setResponseCode(VOConstant.SUCCESS_CODE);
       vo.setResponseMsg(VOConstant.SUCCESS_MSG);
@@ -38,6 +40,9 @@ public class AuthenticationController {
       model.setPassword("111111");
       model.setPosition("开发工程师");
       model.setUserName("小黄");
+      if("1".equals(flag)){
+         throw new ResponseException("000001","非法的flag");
+      }
       registerClientRepository.save(model);
       return vo;
    }
