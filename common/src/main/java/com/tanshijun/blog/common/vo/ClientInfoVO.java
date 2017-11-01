@@ -23,4 +23,9 @@ public class ClientInfoVO extends BaseVO {
     public void setAge(String age) {
         this.age = age;
     }
+
+    @Override
+    public String toString() {
+        return "ClientInfoVO{" + "userName='" + userName + '\'' + ", age='" + age + '\'' + '}';
+    }
 }

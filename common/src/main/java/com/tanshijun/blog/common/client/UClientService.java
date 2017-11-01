@@ -1,6 +1,7 @@
-package com.tanshijun.blog.gateway.client;
+package com.tanshijun.blog.common.client;
 
 import com.tanshijun.blog.common.dto.ClientInfoDTO;
+import com.tanshijun.blog.common.vo.ClientInfoVO;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -9,5 +10,5 @@ import javax.servlet.http.HttpServletRequest;
  */
 public interface UClientService {
 
-    ClientInfoDTO queryClientInfo(HttpServletRequest request);
+    ClientInfoVO queryClientInfo(HttpServletRequest request);
 }

@@ -1,4 +1,4 @@
-package com.tanshijun.blog.gateway.client;
+package com.tanshijun.blog.common.client;
 
 import com.tanshijun.blog.common.dto.ClientInfoDTO;
 import com.tanshijun.blog.common.exception.ResponseException;
@@ -9,18 +9,18 @@ import com.tanshijun.blog.common.vo.ClientInfoVO;
  */
 public class LocalClientInfo {
 
-    private static ThreadLocal<ClientInfoDTO> clientInfoLocal = new ThreadLocal<>();
+    private static ThreadLocal<ClientInfoVO> clientInfoLocal = new ThreadLocal<ClientInfoVO>();
 
-    public static void set(ClientInfoDTO clientInfoDTO){
+    public static void set(ClientInfoVO clientInfoDTO){
         clientInfoLocal.set(clientInfoDTO);
     }
 
-    public static ClientInfoDTO get(){
-        ClientInfoDTO clientInfoDTO = clientInfoLocal.get();
-        if(clientInfoDTO == null){
+    public static ClientInfoVO get(){
+        ClientInfoVO clientInfoVo = clientInfoLocal.get();
+        if(clientInfoVo == null){
             throw new ResponseException("000002","clientInfo is null");
         }
-        return clientInfoDTO;
+        return clientInfoVo;
     }
 
     public static void remove(){

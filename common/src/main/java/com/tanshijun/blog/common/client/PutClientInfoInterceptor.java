@@ -1,8 +1,10 @@
-package com.tanshijun.blog.gateway.client;
+package com.tanshijun.blog.common.client;
 
 import com.tanshijun.blog.common.dto.ClientInfoDTO;
 import com.tanshijun.blog.common.exception.ResponseException;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.tanshijun.blog.common.vo.ClientInfoVO;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 
 import javax.servlet.http.HttpServletRequest;
@@ -13,7 +15,7 @@ import javax.servlet.http.HttpServletResponse;
  */
 public class PutClientInfoInterceptor extends HandlerInterceptorAdapter {
 
-
+    private Logger logger = LoggerFactory.getLogger(getClass());
     private UClientService clientService;
 
     public PutClientInfoInterceptor(UClientService uClientService){
@@ -29,8 +31,9 @@ public class PutClientInfoInterceptor extends HandlerInterceptorAdapter {
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
 
         try{
-            ClientInfoDTO clientInfoDTO = clientService.queryClientInfo(request);
-            LocalClientInfo.set(clientInfoDTO);
+            logger.info("start query clientInfo....");
+            ClientInfoVO clientInfoVO = clientService.queryClientInfo(request);
+            LocalClientInfo.set(clientInfoVO);
         }catch(Exception e){
             throw new ResponseException("000003","获取用户信息出错");
         }
