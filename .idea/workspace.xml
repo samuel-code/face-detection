@@ -2,77 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7304e77e-198e-4a08-9185-6edd261a9f69" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/common/target/classes/com/tanshijun/blog/common/vo/BaseVO.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/authentication/target/classes/com/tanshijun/blog/authentication/controller/AuthenticationController.class" afterPath="$PROJECT_DIR$/authentication/target/classes/com/tanshijun/blog/authentication/controller/AuthenticationController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/authentication/target/classes/com/tanshijun/blog/authentication/controller/ClientInfoController.class" afterPath="$PROJECT_DIR$/authentication/target/classes/com/tanshijun/blog/authentication/controller/ClientInfoController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/target/classes/com/tanshijun/blog/common/client/LocalClientInfo.class" afterPath="$PROJECT_DIR$/common/target/classes/com/tanshijun/blog/common/client/LocalClientInfo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/target/classes/com/tanshijun/blog/common/client/PutClientInfoInterceptor.class" afterPath="$PROJECT_DIR$/common/target/classes/com/tanshijun/blog/common/client/PutClientInfoInterceptor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/target/classes/com/tanshijun/blog/common/client/UClientService.class" afterPath="$PROJECT_DIR$/common/target/classes/com/tanshijun/blog/common/client/UClientService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/target/classes/com/tanshijun/blog/common/client/UClientServiceImpl.class" afterPath="$PROJECT_DIR$/common/target/classes/com/tanshijun/blog/common/client/UClientServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/target/classes/com/tanshijun/blog/common/config/DefaultMvcConfig.class" afterPath="$PROJECT_DIR$/common/target/classes/com/tanshijun/blog/common/config/DefaultMvcConfig.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/target/classes/com/tanshijun/blog/common/config/RedisConfig.class" afterPath="$PROJECT_DIR$/common/target/classes/com/tanshijun/blog/common/config/RedisConfig.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/target/classes/com/tanshijun/blog/common/constant/AuthenEnum.class" afterPath="$PROJECT_DIR$/common/target/classes/com/tanshijun/blog/common/constant/AuthenEnum.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/target/classes/com/tanshijun/blog/common/constant/VOConstant.class" afterPath="$PROJECT_DIR$/common/target/classes/com/tanshijun/blog/common/constant/VOConstant.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/target/classes/com/tanshijun/blog/common/dto/ClientInfoDTO.class" afterPath="$PROJECT_DIR$/common/target/classes/com/tanshijun/blog/common/dto/ClientInfoDTO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/target/classes/com/tanshijun/blog/common/exception/ResponseException.class" afterPath="$PROJECT_DIR$/common/target/classes/com/tanshijun/blog/common/exception/ResponseException.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/target/classes/com/tanshijun/blog/common/operation/redis/RedisOperation.class" afterPath="$PROJECT_DIR$/common/target/classes/com/tanshijun/blog/common/operation/redis/RedisOperation.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/target/classes/com/tanshijun/blog/common/operation/redis/RedisOperationImpl$1.class" afterPath="$PROJECT_DIR$/common/target/classes/com/tanshijun/blog/common/operation/redis/RedisOperationImpl$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/target/classes/com/tanshijun/blog/common/operation/redis/RedisOperationImpl.class" afterPath="$PROJECT_DIR$/common/target/classes/com/tanshijun/blog/common/operation/redis/RedisOperationImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/target/classes/com/tanshijun/blog/common/resolver/ResponseExceptionResolver.class" afterPath="$PROJECT_DIR$/common/target/classes/com/tanshijun/blog/common/resolver/ResponseExceptionResolver.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/target/classes/com/tanshijun/blog/common/session/DistriHttpServletRequestWapper.class" afterPath="$PROJECT_DIR$/common/target/classes/com/tanshijun/blog/common/session/DistriHttpServletRequestWapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/target/classes/com/tanshijun/blog/common/session/DistriHttpSession.class" afterPath="$PROJECT_DIR$/common/target/classes/com/tanshijun/blog/common/session/DistriHttpSession.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/target/classes/com/tanshijun/blog/common/session/DistriService.class" afterPath="$PROJECT_DIR$/common/target/classes/com/tanshijun/blog/common/session/DistriService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/target/classes/com/tanshijun/blog/common/session/DistriServiceImpl.class" afterPath="$PROJECT_DIR$/common/target/classes/com/tanshijun/blog/common/session/DistriServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/target/classes/com/tanshijun/blog/common/session/RedisSessionMap.class" afterPath="$PROJECT_DIR$/common/target/classes/com/tanshijun/blog/common/session/RedisSessionMap.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/target/classes/com/tanshijun/blog/common/session/SessionMap.class" afterPath="$PROJECT_DIR$/common/target/classes/com/tanshijun/blog/common/session/SessionMap.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/target/classes/com/tanshijun/blog/common/utils/TokenUtils.class" afterPath="$PROJECT_DIR$/common/target/classes/com/tanshijun/blog/common/utils/TokenUtils.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/target/classes/com/tanshijun/blog/common/vo/ClientInfoVO.class" afterPath="$PROJECT_DIR$/common/target/classes/com/tanshijun/blog/common/vo/ClientInfoVO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gateway/target/classes/com/tanshijun/blog/gateway/service/impl/AuthenticationServiceImpl.class" afterPath="$PROJECT_DIR$/gateway/target/classes/com/tanshijun/blog/gateway/service/impl/AuthenticationServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tagcenter/target/classes/com/tanshijun/blog/tagcenter/TagCenterApplication.class" afterPath="$PROJECT_DIR$/tagcenter/target/classes/com/tanshijun/blog/tagcenter/TagCenterApplication.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tagcenter/target/classes/com/tanshijun/blog/tagcenter/config/CommonConfig.class" afterPath="$PROJECT_DIR$/tagcenter/target/classes/com/tanshijun/blog/tagcenter/config/CommonConfig.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tagcenter/target/classes/com/tanshijun/blog/tagcenter/config/WebConfig.class" afterPath="$PROJECT_DIR$/tagcenter/target/classes/com/tanshijun/blog/tagcenter/config/WebConfig.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tagcenter/target/classes/com/tanshijun/blog/tagcenter/controller/QueryTagController.class" afterPath="$PROJECT_DIR$/tagcenter/target/classes/com/tanshijun/blog/tagcenter/controller/QueryTagController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tagcenter/target/classes/com/tanshijun/blog/tagcenter/model/TagModel.class" afterPath="$PROJECT_DIR$/tagcenter/target/classes/com/tanshijun/blog/tagcenter/model/TagModel.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tagcenter/target/classes/com/tanshijun/blog/tagcenter/repository/TagRepository.class" afterPath="$PROJECT_DIR$/tagcenter/target/classes/com/tanshijun/blog/tagcenter/repository/TagRepository.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tagcenter/target/classes/com/tanshijun/blog/tagcenter/repository/mongo/MongoTagRepository.class" afterPath="$PROJECT_DIR$/tagcenter/target/classes/com/tanshijun/blog/tagcenter/repository/mongo/MongoTagRepository.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tagcenter/target/classes/com/tanshijun/blog/tagcenter/vo/TagVO.class" afterPath="$PROJECT_DIR$/tagcenter/target/classes/com/tanshijun/blog/tagcenter/vo/TagVO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tagcenter/target/test-classes/com/tanshijun/blog/tagcenter/test/packageInfo.class" afterPath="$PROJECT_DIR$/tagcenter/target/test-classes/com/tanshijun/blog/tagcenter/test/packageInfo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tagcenter/target/test-classes/com/tanshijun/blog/tagcenter/test/repository/TagRepositoryTest.class" afterPath="$PROJECT_DIR$/tagcenter/target/test-classes/com/tanshijun/blog/tagcenter/test/repository/TagRepositoryTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/filecenter_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/filecenter_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/tagcenter_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/tagcenter_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/authentication/authentication.iml" afterPath="$PROJECT_DIR$/authentication/authentication.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/authentication/src/main/java/com/tanshijun/blog/authentication/controller/AuthenticationController.java" afterPath="$PROJECT_DIR$/authentication/src/main/java/com/tanshijun/blog/authentication/controller/AuthenticationController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/authentication/src/main/java/com/tanshijun/blog/authentication/controller/ClientInfoController.java" afterPath="$PROJECT_DIR$/authentication/src/main/java/com/tanshijun/blog/authentication/controller/ClientInfoController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/authentication/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/authentication/src/main/resources/application.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/authentication/target/classes/application.properties" afterPath="$PROJECT_DIR$/authentication/target/classes/application.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/java/com/tanshijun/blog/common/vo/ClientInfoVO.java" afterPath="$PROJECT_DIR$/common/src/main/java/com/tanshijun/blog/common/vo/ClientInfoVO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/filecenter/filecenter.iml" afterPath="$PROJECT_DIR$/filecenter/filecenter.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/filecenter/pom.xml" afterPath="$PROJECT_DIR$/filecenter/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/filecenter/src/main/java/com/tanshijun/blog/filecenter/FileCenterApplication.java" afterPath="$PROJECT_DIR$/filecenter/src/main/java/com/tanshijun/blog/filecenter/FileCenterApplication.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/filecenter/src/main/java/com/tanshijun/blog/filecenter/manager/MongoFileManager.java" afterPath="$PROJECT_DIR$/filecenter/src/main/java/com/tanshijun/blog/filecenter/manager/MongoFileManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/filecenter/src/main/java/com/tanshijun/blog/filecenter/service/impl/FileServiceImpl.java" afterPath="$PROJECT_DIR$/filecenter/src/main/java/com/tanshijun/blog/filecenter/service/impl/FileServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/filecenter/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/filecenter/src/main/resources/application.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/filecenter/target/classes/application.properties" afterPath="$PROJECT_DIR$/filecenter/target/classes/application.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gateway/gateway.iml" afterPath="$PROJECT_DIR$/gateway/gateway.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gateway/src/main/java/com/tanshijun/blog/gateway/service/impl/AuthenticationServiceImpl.java" afterPath="$PROJECT_DIR$/gateway/src/main/java/com/tanshijun/blog/gateway/service/impl/AuthenticationServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gateway/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/gateway/src/main/resources/application.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gateway/target/classes/application.properties" afterPath="$PROJECT_DIR$/gateway/target/classes/application.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tagcenter/pom.xml" afterPath="$PROJECT_DIR$/tagcenter/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tagcenter/src/main/java/com/tanshijun/blog/tagcenter/TagCenterApplication.java" afterPath="$PROJECT_DIR$/tagcenter/src/main/java/com/tanshijun/blog/tagcenter/TagCenterApplication.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tagcenter/src/main/java/com/tanshijun/blog/tagcenter/controller/QueryTagController.java" afterPath="$PROJECT_DIR$/tagcenter/src/main/java/com/tanshijun/blog/tagcenter/controller/QueryTagController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tagcenter/src/main/java/com/tanshijun/blog/tagcenter/vo/TagVO.java" afterPath="$PROJECT_DIR$/tagcenter/src/main/java/com/tanshijun/blog/tagcenter/vo/TagVO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tagcenter/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/tagcenter/src/main/resources/application.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tagcenter/src/test/java/com/tanshijun/blog/tagcenter/test/packageInfo.java" afterPath="$PROJECT_DIR$/tagcenter/src/test/java/com/tanshijun/blog/tagcenter/test/packageInfo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tagcenter/tagcenter.iml" afterPath="$PROJECT_DIR$/tagcenter/tagcenter.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tagcenter/target/classes/application.properties" afterPath="$PROJECT_DIR$/tagcenter/target/classes/application.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/html/index.html" afterPath="$PROJECT_DIR$/web/html/index.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/common/src/main/java/com/tanshijun/blog/common/vo/BaseVO.java" afterPath="$PROJECT_DIR$/common/src/main/java/com/tanshijun/blog/common/vo/ResponseInfoVO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/configCenter/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/configCenter/src/main/resources/application.properties" />
     </list>
     <ignored path="$PROJECT_DIR$/registry/target/" />
     <ignored path="$PROJECT_DIR$/common/target/" />
@@ -143,11 +73,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.properties" pinned="false" current-in-tab="true">
+      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/filecenter/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="108">
               <caret line="4" column="6" lean-forward="false" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.properties" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/configCenter/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="4" column="53" lean-forward="false" selection-start-line="4" selection-start-column="53" selection-end-line="4" selection-end-column="53" />
               <folding />
             </state>
           </provider>
@@ -227,7 +167,6 @@
         <option value="$PROJECT_DIR$/configCenter/src/main/resources/bootstrap.properties" />
         <option value="$PROJECT_DIR$/tagcenter/src/main/java/com/tanshijun/blog/tagcenter/TagCenterApplication.java" />
         <option value="$PROJECT_DIR$/tagcenter/pom.xml" />
-        <option value="$PROJECT_DIR$/configCenter/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/configCenter/pom.xml" />
         <option value="$PROJECT_DIR$/configCenter/src/main/java/com/tanshijun/blog/configCenter/ConfigCenterApplication.java" />
         <option value="$PROJECT_DIR$/tagcenter/src/main/resources/application.properties" />
@@ -236,6 +175,7 @@
         <option value="$PROJECT_DIR$/authentication/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/gateway/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/filecenter/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/configCenter/src/main/resources/application.properties" />
       </list>
     </option>
   </component>
@@ -292,6 +232,94 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="configCenter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="configCenter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="configCenter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="configCenter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -917,7 +945,7 @@
       <workItem from="1508761024105" duration="7704000" />
       <workItem from="1509364373560" duration="30636000" />
       <workItem from="1509885520829" duration="2925000" />
-      <workItem from="1510056585362" duration="7660000" />
+      <workItem from="1510056585362" duration="8261000" />
     </task>
     <servers />
   </component>
@@ -954,7 +982,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95696000" />
+    <option name="totallyTimeSpent" value="96297000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -987,10 +1015,10 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294509" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294509" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36106488" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36106488" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294509" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294509" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28625953" sideWeight="0.8406593" order="7" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28625953" sideWeight="0.8406593" order="7" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2870229" sideWeight="0.15934066" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1325,18 +1353,10 @@
         <state relative-caret-position="76">
           <caret line="12" column="22" lean-forward="false" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#500#501#0" expanded="true" />
-            <element signature="e#573#574#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#500#501#0" expanded="false" />
+            <element signature="e#573#574#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/configCenter/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="42" lean-forward="false" selection-start-line="0" selection-start-column="24" selection-end-line="0" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1416,6 +1436,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="4" column="6" lean-forward="false" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/configCenter/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="4" column="53" lean-forward="false" selection-start-line="4" selection-start-column="53" selection-end-line="4" selection-end-column="53" />
           <folding />
         </state>
       </provider>
