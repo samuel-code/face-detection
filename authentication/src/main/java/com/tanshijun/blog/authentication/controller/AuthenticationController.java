@@ -5,11 +5,10 @@ import com.tanshijun.blog.authentication.repository.RegisterClientRepository;
 import com.tanshijun.blog.common.constant.AuthenEnum;
 import com.tanshijun.blog.common.constant.VOConstant;
 import com.tanshijun.blog.common.exception.ResponseException;
-import com.tanshijun.blog.common.vo.BaseVO;
+import com.tanshijun.blog.common.vo.ResponseInfoVO;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -28,8 +27,8 @@ public class AuthenticationController {
    @Autowired
    private RegisterClientRepository registerClientRepository;
    @GetMapping("/login")
-   public BaseVO login(@RequestParam(value = "flag") String flag){
-      BaseVO vo = new BaseVO();
+   public ResponseInfoVO login(@RequestParam(value = "flag") String flag){
+      ResponseInfoVO vo = new ResponseInfoVO();
       vo.setResponseCode(VOConstant.SUCCESS_CODE);
       vo.setResponseMsg(VOConstant.SUCCESS_MSG);
       RegisterClientModel model = new RegisterClientModel();
@@ -48,9 +47,9 @@ public class AuthenticationController {
    }
 
    @GetMapping("/authen")
-   public BaseVO authentication(String token){
+   public ResponseInfoVO authentication(String token){
       logger.info("enter authen {}",token);
-      BaseVO vo = new BaseVO();
+      ResponseInfoVO vo = new ResponseInfoVO();
       if(StringUtils.isEmpty(token)){
          vo.setResponseCode(AuthenEnum.NOTLOGIN.getResponseCode());
          vo.setResponseMsg(AuthenEnum.NOTLOGIN.getDesc());

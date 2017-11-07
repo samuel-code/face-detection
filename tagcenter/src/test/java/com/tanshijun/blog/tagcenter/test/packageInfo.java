@@ -8,5 +8,5 @@ import org.springframework.boot.context.properties.EnableConfigurationProperties
  */
 public class packageInfo {
 
-    @EnableConfigurationProperties
+
 }

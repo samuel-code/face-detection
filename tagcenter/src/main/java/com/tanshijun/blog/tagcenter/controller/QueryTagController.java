@@ -7,6 +7,7 @@ import com.tanshijun.blog.common.vo.ClientInfoVO;
 import com.tanshijun.blog.tagcenter.vo.TagVO;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -19,14 +20,18 @@ import java.util.List;
  * Created by tanshijun-pc on 2017/11/1.
  */
 @RestController
-@RequestMapping("/authen")
+@RequestMapping("/authen1")
 public class QueryTagController {
 
     private Logger logger = LoggerFactory.getLogger(getClass());
 
+
+    private String testValue;
+
     @GetMapping("/tag")
     public ArrayList<TagVO> queryTag(@RequestParam("flag") String flag){
 
+        logger.info("===============enter tag:"+testValue);
         if("1".equals(flag)){
             throw new ResponseException("000111","非法请求");
         }

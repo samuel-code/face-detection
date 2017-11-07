@@ -9,6 +9,7 @@
         <module name="articlecenter" />
         <module name="authentication" />
         <module name="common" />
+        <module name="configCenter" />
         <module name="filecenter" />
         <module name="gateway" />
         <module name="registry" />
@@ -16,14 +17,15 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
-      <module name="articlecenter" target="1.8" />
-      <module name="authentication" target="1.8" />
-      <module name="blog" target="1.8" />
-      <module name="common" target="1.8" />
-      <module name="filecenter" target="1.8" />
-      <module name="gateway" target="1.8" />
-      <module name="registry" target="1.8" />
-      <module name="tagcenter" target="1.8" />
+      <module name="articlecenter" target="1.6" />
+      <module name="authentication" target="1.6" />
+      <module name="blog" target="1.6" />
+      <module name="common" target="1.6" />
+      <module name="configCenter" target="1.6" />
+      <module name="filecenter" target="1.6" />
+      <module name="gateway" target="1.6" />
+      <module name="registry" target="1.6" />
+      <module name="tagcenter" target="1.6" />
     </bytecodeTargetLevel>
   </component>
 </project>

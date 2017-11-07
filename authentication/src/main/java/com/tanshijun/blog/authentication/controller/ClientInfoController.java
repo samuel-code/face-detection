@@ -24,7 +24,7 @@ public class ClientInfoController {
         ClientInfoVO infoVO = new ClientInfoVO();
         infoVO.setAge("12");
         infoVO.setUserName("lisai");
-        infoVO.setResponseCode(VOConstant.SUCCESS_CODE);
+
         return infoVO;
     }
 }

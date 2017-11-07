@@ -1,7 +1,5 @@
 package com.tanshijun.blog.tagcenter.vo;
 
-import com.tanshijun.blog.common.vo.BaseVO;
-
 /**
  * Created by tanshijun-pc on 2017/11/1.
  */

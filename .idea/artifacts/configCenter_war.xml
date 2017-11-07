@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="configCenter:war">
+    <output-path>$PROJECT_DIR$/configCenter/target</output-path>
+    <root id="archive" name="configCenter.war">
+      <element id="artifact" artifact-name="configCenter:war exploded" />
+    </root>
+  </artifact>
+</component>

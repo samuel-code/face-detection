@@ -3,7 +3,7 @@ package com.tanshijun.blog.common.vo;
 /**
  * Created by tanshijun-pc on 2017/10/9.
  */
-public class ClientInfoVO extends BaseVO {
+public class ClientInfoVO {
 
     private String userName;
     private String age;
